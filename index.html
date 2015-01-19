@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<link rel="stylesheet" type="text/css" href="main.css">
+<script src="./imagesFetcher/config.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" data-main="./imagesFetcher/site.js" src="./imagesFetcher/require.js"></script>
+
+<head>
+<meta charset="utf-8">
+<title>Flicker Search Engine</title>
+<style type="text/css">
+
+
+
+</style>
+</head>
+
+<body>
+  <div class="header">
+    <label><b>Ninja</b> Flickr</label>
+    <div class="search-bg">
+      <input type="text" id="id_tags" placeholder="Search">
+      <button id="searchBtn" ></button>
+    </div>
+    
+  </div>
+  
+  <div class="header2">
+
+</div>
+
+
+  
+
+<button id="clearButton" class="buttonStyle">clear</button>
+<div id="mainContent">
+    
+     
+     <div class="controller" data-bind="foreach: itemsObservables" >
+       
+      <div class="tooltip" data-bind="click: $parent.select" >    
+        <img data-bind="attr: { 'src': src ,'height':'200px' } , css: { 'selected': isSelected}" /> 
+        <span class="classic" data-bind="text: title"></span>    
+      </div>
+       
+       
+    </div>
+    
+    
+    
+</div>
+
+
+</body>
+</html>

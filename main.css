@@ -1,0 +1,233 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #2e2e2e;
+}
+
+#mainContent {
+    border-radius: 4px;
+    text-align: center;
+}
+
+.buttonStyle {
+    border-radius: 4px;
+    border: thin solid #F0E020;
+    background-color: #F8F094;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #663300;
+    width: 75px;
+}
+
+.buttonStyle:hover {
+    border: thin solid #FFCC00;
+    background-color: #FCF9D6;
+    color: #996633;
+    cursor: pointer;
+}
+
+.buttonStyle:active {
+    border: thin solid #99CC00;
+    background-color: #F5FFD2;
+    color: #669900;
+    cursor: pointer;
+}
+
+.controller img {
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.selected {
+}
+
+.controller img:hover {
+    outline: none;
+    border-color: #9ecaed;
+    -moz-box-shadow: 0px 0px 10px #b3e0ff;
+    -webkit-box-shadow: 0px 0px 10px #b3e0ff;
+    box-shadow: 0px 0px 10px #b3e0ff;
+}
+
+.header {
+    height: 44px;
+    float: left;
+    margin-bottom: 10px;
+    background: #131418;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,0.8);
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    text-align: center;
+}
+
+.search-bg {
+    max-width: 500px;
+    width: 40%;
+    height: 34px;
+    background: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    color: black;
+    margin-top: 4px;
+    overflow: hidden;
+    position: relative;
+    border: 0px;
+}
+
+.search-bg input {
+    border: 0px;
+    line-height: 32px;
+    height: 32px;
+    width: 80%;
+  /*width:400px;*/
+    float: left;
+    margin: 0px;
+    padding-left: 3%;
+    padding-right: 2%;
+    font-size: 15px;
+    background: #f1f1f1;
+    outline: 0;
+}
+
+#searchBtn {
+    width: 15%;
+    height: 34px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: white;
+    background-image: url('https://cdn0.iconfinder.com/data/icons/essentials-3/512/685082-Search-20.png');
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0px;
+}
+
+#clearButton {
+    display: none;
+}
+
+.header label {
+    float: left;
+    font-size: 22px;
+    color: white;
+    line-height: 44px;
+    margin-left: 10px;
+    font-family: arial,sans-serif;
+}
+
+.header label b {
+    text-transform: uppercase;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.header2 {
+    width: 100%;
+    height: 40px;
+    float: left;
+    padding-bottom: 10px;
+}
+
+
+/*-------------------------------------------tool tip css---------------------*/
+ 
+.tooltip {
+    border-bottom: 1px dotted #2a2a2a;
+    color: #000000;
+    outline: none;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.tooltip span {
+    margin-left: -999em;
+    position: absolute;
+}
+
+.tooltip:hover span {
+    border-radius: 5px 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-family: Calibri, Tahoma, Geneva, sans-serif;
+    position: absolute;
+    left: 20%;
+    top: 70%;
+    z-index: 99;
+    margin-left: 0;
+    max-width: 250px;
+}
+
+.tooltip:hover img {
+}
+
+.tooltip:hover em {
+    font-family: Candara, Tahoma, Geneva, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    padding: 0.2em 0 0.6em 0;
+}
+
+.classic {
+    padding: 5px;
+}
+
+* html a:hover {
+    background: transparent;
+}
+
+.classic {
+    background: #fafafa;
+    border: 1px solid #d4d4d6;
+}
+
+.classic {
+    position: relative;
+    background: #f9f9f9;
+    border: 1px solid #d4d4d6;
+}
+
+.classic:after, .classic:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.classic:after {
+    border-color: rgba(249, 249, 249, 0);
+    border-bottom-color: #f9f9f9;
+    border-width: 6px;
+    margin-left: -6px;
+}
+
+.classic:before {
+    border-color: rgba(212, 212, 214, 0);
+    border-bottom-color: #d4d4d6;
+    border-width: 6px;
+    margin-left: -6px;
+}
+
+/*---------------------------------------------------------------------*/
